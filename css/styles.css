@@ -1,0 +1,407 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "BabelStone Modern";
+  font-style: normal;
+  src:  url("~@/fonts/BabelStoneModern.ttf") format("truetype");
+}
+
+body {
+	font-family:"BabelStone Modern";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  
+  color: #FFFFFF;
+}
+
+html{
+position: relative;
+width: 100%;
+height: 100vh;
+background: radial-gradient(50% 50% at 50% 50%, #3C3C3C 0%, #131313 100%);
+}
+
+
+
+/* Шапка сайта */
+
+
+.header{
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  padding: 10px 44px; 
+  justify-content: space-between;
+  /* border: 10px solid #6c38cc; */
+  align-items: center;
+  margin: 0 auto;
+  background: #151515;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* margin-left: -8px; */
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.header_logo{
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+}
+
+.header_menu{
+  display: flex;
+  /* border: 1px solid #6c38cc ; */
+  align-items: center;
+  margin-right: 247px;
+}
+
+.header_menu ul{
+  list-style: none;
+  display: flex;
+  gap: 55px;
+}
+
+.header_menu ul > li{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.header_menu ul > li > a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header_menu ul > li > a:hover{
+  color: #0779FF;
+}
+
+.user{
+  display: flex; 
+  /* justify-content: center; */
+  justify-content: flex-start; 
+  align-items: center; 
+}
+
+.user ul{
+  list-style: none;
+  display: flex;
+  margin-right: 62px;
+  gap: 12px;
+
+}
+
+.user ul>li{
+
+  /* justify-content: flex-end;
+  align-items: center; */
+  justify-content: center; 
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  flex: 1;
+  position: relative;
+  height:40px;
+  padding-right: 12px;
+  padding-top: 11px;
+  /* border: 1px solid #6c38cc ; */
+}
+
+.user ul > li:not(:last-of-type) {
+  box-shadow: 2px 0 0 #ccc;
+  
+}
+
+.user ul > li:before {
+  content: '';
+  position: absolute;
+  align-items: center;
+  width: 1px;
+  height: 38px;
+  right: -12px;
+  top: 30px;
+  /* border-left: 1px solid #ccc; */
+  z-index: -1;
+}
+
+.user ul > li > a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.user ul > li > a:hover{
+  color: #0779FF;
+}
+
+.language{
+  display: flex;
+  justify-content: flex-end;
+  /* border: 1px solid #6c38cc ; */
+  align-items: center;
+  /* margin-right: 44px; */
+  gap: 19px;
+}
+
+.header_button_ru{
+  /* display: flex; */
+  align-items: center;
+  border: none;
+  gap: 19px;
+  width: 33px;
+  height: 23px;
+  left: 1325px;
+  top: 39px;
+  
+
+  background: #FFFFFF;
+
+  font-family: 'BabelStone Modern';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.header_button_en{
+  /* display: flex; */
+  align-items: center;
+  background: none;
+  border: none;
+  gap: 19px;
+  width: 19px;
+  height: 19px;
+  left: 1377px;
+  top: 41px;
+
+  font-family: 'BabelStone Modern';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #FFFFFF;
+}
+
+/* БАННЕР*/
+
+.banner {
+  display: flex;
+  background-image: url("back1.png");
+  background-size: 110% auto;
+  background-position: left;
+  position: relative;
+  width: 100%;
+  height: 515px;
+  /* left: 0; */
+  top: 0;
+  margin-top: 100px; 
+}
+
+#backgroundButton {
+  position: absolute;
+  width: 75%;
+  height: auto;
+  margin-top: 110px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  
+}
+
+#stroke{
+  position: absolute;
+  width: 77%;
+  height: 100.5%;
+  margin-top: 110px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#bigLogo{
+  position: absolute;
+  width: 15%;
+  height: auto;
+  margin-top: 110px;
+  top: 15%;
+  left: 26.5%;
+}
+
+
+.banner-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 90px;
+
+  border: none;
+
+  background: #6CAFFF;
+
+  font-family: 'BabelStone Modern';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .banner-button {
+    width: 280px;
+    left: 60%;
+    transform: translateX(-50%);
+  }
+}
+
+#stroke2{
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  height:85px;
+  top: 347px;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    height: 100px;
+  }
+}
+
+.banner-logo{
+  position: absolute;
+  width: auto;
+  height: 17px;
+  left: 510px;
+  top: 473px;
+
+  font-family: 'Average';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  /* identical to box height */
+
+  letter-spacing: 0.34em;
+
+  color: #FFFFFF;
+
+}
+
+.banner-subtitle {
+  position: absolute;
+  width: 216px;
+  height: 19px;
+  left: 1025px;
+  top: 437px;
+
+  font-family: 'BabelStone Modern';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-decoration-line: underline;
+
+  color: #FFFFFF;
+}
+
+/* КОНТЕНТ */
+
+.content{
+  display: flex;
+  position: relative;
+  border: 4px solid #6c38cc ; 
+  margin-top: 150px;
+}
+
+.content_1{
+  display: flex;
+  justify-content: center;
+  align-content: center; 
+
+
+
+  text-align: center;
+	padding: 10px;
+  border: 1px solid #6c38cc ; 
+  margin-left: 85px;
+  margin-right: 85px;
+
+  gap:50px;
+}
+
+.content_1 div{
+  justify-content: center;
+  align-content: center; 
+  border: 1px solid #6c38cc ; 
+  width: 348px;
+  flex: 1 1 calc(100%/3 - 20px);
+}
+
+.content_1 img{
+  float: left;
+}
+
+.first-p{
+  margin-left: 9px; 
+  font-family: 'BabelStone Modern';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  color: #A7A7A7;
+}
+
+.second-p{
+  margin-left: 9px; 
+  font-family: 'BabelStone Modern';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
