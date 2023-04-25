@@ -293,14 +293,14 @@ background: radial-gradient(50% 50% at 50% 50%, #3C3C3C 0%, #131313 100%);
   position: absolute;
   width: auto;
   height: 17px;
-  left: 510px;
+  left: 506px;
   top: 473px;
 
   font-family: 'Average';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 17px;
+  font-size: 17.5px;
+  line-height: 12px;
   /* identical to box height */
 
   letter-spacing: 0.34em;
@@ -330,12 +330,7 @@ background: radial-gradient(50% 50% at 50% 50%, #3C3C3C 0%, #131313 100%);
 
 /* КОНТЕНТ */
 
-.content{
-  display: flex;
-  position: relative;
-  border: 4px solid #6c38cc ; 
-  margin-top: 150px;
-}
+
 
 .content_1{
   display: flex;
@@ -343,51 +338,65 @@ background: radial-gradient(50% 50% at 50% 50%, #3C3C3C 0%, #131313 100%);
   align-content: center; 
 
 
-
   text-align: center;
 	padding: 10px;
-  border: 1px solid #6c38cc ; 
+  /* border: 1px solid #6c38cc ;  */
   margin-left: 85px;
   margin-right: 85px;
-
-  gap:50px;
+  margin-top: 150px;
+  gap:180px;
 }
 
 .content_1 div{
   justify-content: center;
   align-content: center; 
-  border: 1px solid #6c38cc ; 
-  width: 348px;
-  flex: 1 1 calc(100%/3 - 20px);
+  /* border: 1px solid #6c38cc ;  */
+  flex-basis: 450px;
+ 
+
+  /* flex: 1 1 calc(100%/3 - 20px); */
 }
 
 .content_1 img{
   float: left;
+  padding: 10px;
 }
 
-.first-p{
+.content_1 p{
+  text-align: left;
+  margin-top: 10px;
+  /* max-width: 350px; */
+
   margin-left: 9px; 
   font-family: 'BabelStone Modern';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 14px;
-  /* identical to box height */
-  color: #A7A7A7;
-}
-
-.second-p{
-  margin-left: 9px; 
-  font-family: 'BabelStone Modern';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-
+  
   color: #FFFFFF;
 }
 
+#content1{
+  position: absolute;
 
+  left: 95px;
+  top: 770px;
+}
+
+#content2{
+  position: absolute;
+
+  left: 725px;
+  top: 770px;
+}
+
+#content3{
+  position: absolute;
+
+  right: 60px;
+  top: 770px;
+}
 
 
 
