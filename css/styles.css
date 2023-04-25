@@ -398,11 +398,44 @@ background: radial-gradient(50% 50% at 50% 50%, #3C3C3C 0%, #131313 100%);
   top: 770px;
 }
 
+h1{
+  text-align: center;
+  font-family: 'BabelStone Modern';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 42px;
 
+  color: #FFFFFF;
 
+}
 
+.content_2{
+  display: flex;
+  /* justify-content: center;
+  align-content: center;  */
+  /* align-items: center; */
+  flex-wrap: wrap;
+  width: 90%;
+  /* gap: 0px 25px 25px 0; */
+  border: 1px solid #6c38cc ; 
+  margin-left: 85px;
+}
 
+.item{
+  align-items: center;
+  border: 1px solid #6c38cc ; 
+  flex: 1 1 calc(100% / 2);
+  width: 522px;
+  height: 279px;
 
+}
+
+/* .content_2 p{
+  width: 526px;
+  height: 140px;
+  text-align: left;
+} */
 
 
 
