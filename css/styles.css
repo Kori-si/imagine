@@ -412,35 +412,71 @@ h1{
 
 .content_2{
   display: flex;
-  /* justify-content: center;
-  align-content: center;  */
+  justify-content: center;
+  align-content: center; 
   /* align-items: center; */
   flex-wrap: wrap;
-  width: 90%;
+  width:80%;
   /* gap: 0px 25px 25px 0; */
-  border: 1px solid #6c38cc ; 
-  margin-left: 85px;
+  /* border: 1px solid #6c38cc ;  */
+  margin-left: 200px;
 }
 
 .item{
   align-items: center;
-  border: 1px solid #6c38cc ; 
+
   flex: 1 1 calc(100% / 2);
   width: 522px;
   height: 279px;
 
+
+
 }
 
-/* .content_2 p{
-  width: 526px;
-  height: 140px;
-  text-align: left;
-} */
+.content_2 p{
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-top: 90px;
+  width: 600px;
+
+}
 
 
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 438px;
+  height: 70px;
+  bottom: 90px;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
 
+  background: #6CAFFF;
 
+  font-family: 'BabelStone Modern';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+}
+
+#button2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+ top: -164px;
+ left: 726px;
+ 
+}
 
 
 
